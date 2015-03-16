@@ -1,0 +1,23 @@
+body{
+	width: 1000px;
+}
+#big-container{
+	width: 421px;
+	display: inline-block;
+}
+#drag1,
+#drag2,
+#drag3,
+#drag4,
+#droppable5,
+#draggable{
+	display: inline-block;
+	width: 420px;
+}
+img{
+	display: block;
+}
+#droppable5{
+	vertical-align: top;
+	margin-top: 0px;
+}

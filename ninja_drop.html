@@ -4,16 +4,43 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Utilizing jQueryUI to drag and drop a ninja">
 	<title>Ninja Drag and Drop Puzzle</title>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  	<link rel="stylesheet" href="/resources/demos/style.css">
-  	<style>
-  		#draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-  		#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
-  </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  	<link rel="stylesheet" href="ninja_drop.css">
+	<script>
+	$(document).ready(function(){
+		$('#draggable').draggable();
+		$('#drag1').draggable();
+		$('#drag2').draggable();
+		$('#drag3').draggable();
+		$('#drag4').draggable();
+		$('#droppable5').droppable();
+	});
+	</script>
 </head>
 <body>
-	
+	<div id='big-container'>
+		<p>Drag these sliced images to the right in the correct order!</p>	
+		<div id='draggable'>
+			<img src="img/sort5.bmp" alt="bottom">
+		</div>
+		<div id='drag1'>
+			<img src="img/sort4.bmp" alt="bottom-2">
+		</div>
+		<div id='drag2'>
+			<img src="img/sort3.bmp" alt="middle">
+		</div>
+		<div id='drag3'>
+			<img src="img/sort2.bmp" alt="top-2">
+		</div>
+		<div id='drag4'>
+			<img src="img/sort1.bmp" alt="top">
+		</div>
+	</div>
+	<div id='droppable5'>
+		<p>Drop the sliced images here, in the correct order!</p>
+	</div>
+
 </body>
 </html>
