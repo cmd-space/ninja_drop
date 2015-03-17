@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Utilizing jQueryUI to drag and drop a ninja">
+	<title>Ninja Drag and Drop Puzzle</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  	<link rel="stylesheet" href="ninja_drop.css">
+	<script>
+	$(document).ready(function(){
+		// $('#draggable').draggable();
+		// $('#drag1').draggable();
+		// $('#drag2').draggable();
+		// $('#drag3').draggable();
+		// $('#drag4').draggable();
+		// $('#droppable5').droppable();
+		$('#sortable').sortable();
+		$('#sortable').disableSelection();
+	});
+	</script>
+</head>
+<body>
+	<div id='big-container'>
+		<p>Re-arrange the ninja in the correct order</p>	
+		<ul id="sortable">
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><img src="img/sort5.bmp" alt="bottom"></li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><img src="img/sort4.bmp" alt="bottom-2"></li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><img src="img/sort3.bmp" alt="middle"></li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><img src="img/sort2.bmp" alt="top-2"></li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><img src="img/sort1.bmp" alt="top"></li>
+		</ul>
+			
+		<!-- </div>
+		<div id='drag1'>
+			
+		</div>
+		<div id='drag2'>
+			
+		</div>
+		<div id='drag3'>
+			
+		</div>
+		<div id='drag4'>
+			
+		</div> -->
+	</div>
+	<!-- <div id='droppable5'>
+		<p>Drop the sliced images here, in the correct order!</p>
+	</div> -->
+
+</body>
+</html>

@@ -21,3 +21,6 @@ img{
 	vertical-align: top;
 	margin-top: 0px;
 }
+#big-container ul{
+	list-style-type: none;
+}
